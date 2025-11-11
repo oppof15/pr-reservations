@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - PR Reservations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <nav>
+    <a href="/" class="logo">PR Reservations</a>
+    <div class="nav-links">
+        <a href="/booking.html">Book Tickets</a>
+        <a href="/bookings.html">My Bookings</a>
+    </div>
+</nav>
+
+    <main>
+        <h2>Admin Panel</h2>
+        <p id="admin-status">Checking authorization...</p>
+
+        <div id="admin-content" style="display: none;">
+            <h3>Add New Trip</h3>
+            <form id="add-trip-form">
+                <label>Bus Name: <input type="text" id="busName" required></label>
+                <label>Origin: <input type="text" id="origin" required></label>
+                <label>Destination: <input type="text" id="destination" required></label>
+                <label>Departure: <input type="datetime-local" id="departureTime" required></label>
+                <label>Arrival: <input type="datetime-local" id="arrivalTime" required></label>
+                <label>Price: <input type="number" id="price" required></label>
+                <label>Total Seats: <input type="number" id="totalSeats" required></label>
+                <button type="submit">Add Trip</button>
+            </form>
+
+            <hr>
+
+            <h3>Current Trips</h3>
+            <div id="current-trips-list">
+                <p>Loading trips...</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

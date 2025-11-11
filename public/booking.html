@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets - PR Reservations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo">PR Reservations</a>
+        <div class="nav-links" id="nav-links-container">
+            </div>
+    </nav>
+
+    <main class="booking-container">
+
+        <div class="booking-card">
+            <h2>Find Your Bus</h2>
+            <form id="search-form">
+                
+                <label for="origin">From:</label>
+                <input type="text" id="origin" name="origin" placeholder="e.g., Mumbai" required>
+                
+                <label for="destination">To:</label>
+                <input type="text" id="destination" name="destination" placeholder="e.g., Pune" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Search Buses</button>
+            </form>
+        </div>
+
+        <div id="results-container">
+            </div>
+
+    </main>
+
+    <script src="js/booking.js"></script>
+</body>
+</html>

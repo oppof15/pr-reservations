@@ -1,0 +1,5 @@
+# Ignores all installed modules
+node_modules
+
+# Ignores all your secret keys and passwords
+.env
